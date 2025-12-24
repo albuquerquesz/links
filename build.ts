@@ -115,6 +115,13 @@ if (existsSync(outdir)) {
   await rm(outdir, { recursive: true, force: true });
 }
 
+if (existsSync("public")) {
+  console.log(`📂 Copying public assets to ${outdir}`);
+  await Bun.write(path.join(outdir, ".keep"), ""); // Ensure dir exists
+  const { cp } = await import("fs/promises");
+  await cp("public", outdir, { recursive: true });
+}
+
 const start = performance.now();
 
 const entrypoints = [...new Bun.Glob("**.html").scanSync("src")]
