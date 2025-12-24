@@ -11,25 +11,29 @@ const links = [
     type: "other",
     title: "Portfolio",
     description: "Explore my professional journey, full-stack projects, and technical expertise in backend development and system architecture.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    url: "salve",
   },
   {
     type: "article",
     title: "Why I Switched to Go",
     description: "An in-depth look at performance improvements and developer experience comparing Node.js vs Golang for backend services.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
+    url: "salve",
   },
   {
     type: "article",
     title: "System Design 101",
     description: "Understanding the trade-offs in distributed systems: CAP theorem, consistency patterns, and scaling strategies.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
+    url: "salve",
   },
   {
     type: "article",
     title: "My Linux Terminal Setup",
     description: "A tour of my dotfiles, explaining how I use Neovim, Tmux, and Zsh to maximize productivity.",
-    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2074&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2074&auto=format&fit=crop",
+    url: "salve",
   }
 ];
 
@@ -41,7 +45,13 @@ export function App() {
 
       <section className=" p-8 flex flex-col space-y-12">
         {links.map((link, index) => (
-          <div key={index} className="flex gap-8 h-[250px] rounded-xl border border-dashed border-zinc-800 cursor-pointer hover:bg-zinc-50 transition-colors group">
+          <a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-8 h-[250px] rounded-xl border border-dashed border-zinc-800 cursor-pointer hover:bg-zinc-50 transition-colors group no-underline"
+          >
             <img
               src={link.image}
               className="flex-[0.7] rounded-l-xl bg-zinc-800 h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -52,11 +62,14 @@ export function App() {
               <span className="font-mono text-zinc-400 uppercase tracking-widest">
                 {link.type === "article" ? "Article" : "Featured"}
               </span>
-              <h2 className="text-3xl font-bold uppercase text-zinc-800 group-hover:text-primary transition-colors">{link.title}</h2>
-              <p className="text-zinc-600 leading-relaxed line-clamp-3">{link.description}</p>
+              <h2 className="text-3xl font-bold uppercase text-zinc-800 group-hover:text-primary transition-colors">
+                {link.title}
+              </h2>
+              <p className="text-zinc-600 leading-relaxed line-clamp-3">
+                {link.description}
+              </p>
             </div>
-          </div>
-
+          </a>
         ))}
       </section>
 
