@@ -11,7 +11,7 @@ export function App() {
       <Hero />
       <SocialMedia />
 
-      <section className="mt-8 p-8">
+      <section className="mt-8 p-8 flex flex-col space-y-12">
 
         <div className="flex gap-8 h-[200px] rounded-xl border border-dashed border-zinc-800">
           <div className="flex-[0.5] rounded-l-xl bg-zinc-800 h-full w-full"></div>
