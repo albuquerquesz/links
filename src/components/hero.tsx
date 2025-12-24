@@ -18,9 +18,9 @@ export const Hero = () => {
                 </h1>
               </div>
 
-              <div className="mt-20">
-                <p className="text-primary text-xl font-medium max-w-md leading-relaxed">
-                  salve
+              <div className="mt-8">
+                <p className="text-primary text-xl font-medium max-w-[500px] leading-relaxed opacity-90">
+                  Transformando lógica complexa em sistemas resilientes. focado em arquitetura e performance.
                 </p>
               </div>
             </aside>
