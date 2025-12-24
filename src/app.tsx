@@ -10,8 +10,8 @@ const links = [
     type: "other",
     title: "Portfolio",
     description: "Explore minha trajetória profissional, projetos full-stack e expertise técnica em desenvolvimento backend e arquitetura de sistemas.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    url: "salve",
+    image: "https://me.albuquerquesz.com.br/logo-portfolio-2.svg",
+    url: "https://me.albuquerquesz.com.br",
   },
   {
     type: "article",
