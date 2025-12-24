@@ -4,8 +4,6 @@ import { Hero } from "./components/hero.tsx"
 import { SocialMedia } from "./components/social-media.tsx"
 import { LinkCard } from "./components/link-card.tsx"
 import { Footer } from "./components/footer.tsx"
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
 
 const links = [
   {
