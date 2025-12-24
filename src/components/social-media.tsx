@@ -12,7 +12,7 @@ export const SocialMedia = () => {
         </a>
       </div>
       <div className="w-full h-full border-t-2 border-b-2 border-l-2 border-zinc-300 flex justify-center items-center hover:bg-zinc-50 transition-colors group">
-        <a href="https://linkedin.com/in/seu_usuario" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+        <a href="https://linkedin.com/in/albuquerquesz" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
           <FaLinkedinIn size={32} className="group-hover:scale-110 transition-transform" />
         </a>
       </div>

@@ -2,6 +2,7 @@ import "./index.css";
 
 import { Hero } from "./components/hero.tsx"
 import { SocialMedia } from "./components/social-media.tsx"
+import { LinkCard } from "./components/link-card.tsx"
 import { Footer } from "./components/footer.tsx"
 import logo from "./logo.svg";
 import reactLogo from "./react.svg";
@@ -39,40 +40,10 @@ const links = [
 
 export function App() {
   return (
-    <div id="container" className="w-[1100px] h-full flex flex-col rounded-md border border-zinc-300 mb-10">
+    <div id="container" className="w-full max-w-5xl mx-auto h-full flex flex-col rounded-md border border-zinc-300 mb-10 bg-white">
       <Hero />
       <SocialMedia />
-
-      <section className=" p-8 flex flex-col space-y-12">
-        {links.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-8 h-[250px] rounded-xl border border-dashed border-zinc-800 cursor-pointer hover:bg-zinc-50 transition-colors group no-underline"
-          >
-            <img
-              src={link.image}
-              className="flex-[0.7] rounded-l-xl bg-zinc-800 h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-              alt={link.title}
-            />
-
-            <div className="flex flex-col space-y-2 flex-2 p-8 justify-center">
-              <span className="font-mono text-zinc-400 uppercase tracking-widest">
-                {link.type === "article" ? "Article" : "Featured"}
-              </span>
-              <h2 className="text-3xl font-bold uppercase text-zinc-800 group-hover:text-primary transition-colors">
-                {link.title}
-              </h2>
-              <p className="text-zinc-600 leading-relaxed line-clamp-3">
-                {link.description}
-              </p>
-            </div>
-          </a>
-        ))}
-      </section>
-
+      <LinkCard links={links} />
       <Footer />
     </div >
   );
