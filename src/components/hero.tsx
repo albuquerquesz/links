@@ -13,7 +13,7 @@ export const Hero = () => {
             <aside className="flex-1 flex flex-col justify-start">
               <div className="flex flex-col space-y-2 mt-10">
                 {/*<span className="text-primary font-mono text-sm mb-4">HUMAN NAME:</span>*/}
-                <h1 className="text-7xl mt-2 font-black text-primary leading-18 tracking-tighter">
+                <h1 className="text-7xl mt-2 font-black text-primary leading-20 tracking-tighter">
                   VICTOR ALBUQUERQUE
                 </h1>
               </div>

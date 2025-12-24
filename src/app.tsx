@@ -17,7 +17,7 @@ const links = [
     type: "article",
     title: "Why I Switched to Go",
     description: "An in-depth look at performance improvements and developer experience comparing Node.js vs Golang for backend services.",
-    image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"
   },
   {
     type: "article",
