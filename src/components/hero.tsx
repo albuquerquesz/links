@@ -12,14 +12,13 @@ export const Hero = () => {
           <div className="flex flex-col md:flex-row gap-8 h-full items-center md:items-stretch">
             <aside className="flex-1 flex flex-col justify-center md:justify-start text-center md:text-left z-10">
               <div className="flex flex-col space-y-2 mt-10 md:mt-20">
-                {/*<span className="text-primary font-mono text-sm mb-4">HUMAN NAME:</span>*/}
                 <h1 className="text-5xl md:text-7xl mt-2 font-black text-primary leading-tight md:leading-18 tracking-tighter">
                   VICTOR ALBUQUERQUE
                 </h1>
               </div>
 
               <div className="mt-8 mx-auto md:mx-0">
-                <p className="text-primary text-sm font-mono max-w-sm leading-relaxed opacity-90 uppercase tracking-tight">
+                <p className="text-primary font-mono max-w-sm leading-relaxed opacity-90 tracking-tight">
                   Transformando lógica complexa em sistemas resilientes. Especialista em Backend com foco em Go e TypeScript, focado em arquitetura e performance.
                 </p>
               </div>
@@ -29,7 +28,7 @@ export const Hero = () => {
               <div className="bg-white shadow-2xl p-4 rotate-2 hover:rotate-0 transition-all duration-500 w-fit mx-auto mt-8 md:mt-0">
                 <div className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] overflow-hidden bg-gray-100">
                   <img
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+                    src="/foto2.jpeg"
                     alt="Victor Albuquerque"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
