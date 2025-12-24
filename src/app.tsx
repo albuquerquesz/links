@@ -11,10 +11,14 @@ export function App() {
       <Hero />
       <SocialMedia />
 
-      <section className="mt-8 p-8 flex flex-col space-y-12">
+      <section className=" p-8 flex flex-col space-y-12">
 
         <div className="flex gap-8 h-[200px] rounded-xl border border-dashed border-zinc-800">
-          <div className="flex-[0.5] rounded-l-xl bg-zinc-800 h-full w-full"></div>
+          <img
+            src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+            className="flex-[0.5] rounded-l-xl bg-zinc-800 h-full w-full object-cover"
+            alt="Hero image"
+          />
 
           <div className="flex flex-col space-y-2 flex-2 p-8">
             <h2 className="text-2xl font-bold">SALVE</h2>
