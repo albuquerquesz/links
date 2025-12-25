@@ -18,7 +18,7 @@ const links = [
     title: "Meu Ambiente de Desenvolvimento",
     description: "Um tour pela minha trajetória, explicando como cheguei no meu ambiente atual de forma a maximizar minha produtividade.",
     image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2074&auto=format&fit=crop",
-    url: "salve",
+    url: "https://albuquerquesz.medium.com/como-organizar-meu-ambiente-me-torna-um-desenvolvedor-melhor-do-que-você-ecc348b1f94e",
   },
   {
     type: "article",
