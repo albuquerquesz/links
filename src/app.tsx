@@ -15,6 +15,13 @@ const links = [
   },
   {
     type: "article",
+    title: "Meu Ambiente de Desenvolvimento",
+    description: "Um tour pela minha trajetória, explicando como cheguei no meu ambiente atual de forma a maximizar minha produtividade.",
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2074&auto=format&fit=crop",
+    url: "salve",
+  },
+  {
+    type: "article",
     title: "Por que mudei para Go",
     description: "Uma análise profunda sobre melhorias de performance e experiência de desenvolvimento comparando Node.js vs Golang para serviços backend.",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
@@ -27,19 +34,12 @@ const links = [
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
     url: "salve",
   },
-  {
-    type: "article",
-    title: "Meu Setup de Terminal Linux",
-    description: "Um tour pelos meus dotfiles, explicando como utilizo Neovim, Tmux e Fish para maximizar minha produtividade.",
-    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=2074&auto=format&fit=crop",
-    url: "salve",
-  }
 ];
 
 export function App() {
   return (
-    <div id="container" className="w-full max-w-5xl mx-auto h-full flex flex-col rounded-md border border-zinc-300 mt-10 mb-10 bg-white">
-      <Hero />
+    <div id="container" className="w-full max-w-5xl mx-auto flex flex-col rounded-md border border-zinc-300 bg-white mt-4">
+      < Hero />
       <SocialMedia />
       <LinkCard links={links} />
       <Footer />
