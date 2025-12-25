@@ -9,7 +9,7 @@ export const Hero = () => {
           <div className="absolute bottom-4 left-4 w-12 h-12 border-b-4 border-l-4 border-primary" />
           <div className="absolute bottom-4 right-4 w-12 h-12 border-b-4 border-r-4 border-primary" />
 
-          <div className="flex flex-col md:flex-row gap-8 h-full items-center md:items-stretch">
+          <div className="flex flex-col md:flex-row md:gap-4 gap-8 h-full items-center md:items-stretch">
             <aside className="flex-1 flex flex-col justify-center md:justify-start text-center md:text-left z-10">
               <div className="flex flex-col space-y-2 mt-10 md:mt-20">
                 <h1 className="text-5xl md:text-7xl mt-2 font-black text-primary leading-tight md:leading-18 tracking-tighter">

@@ -22,7 +22,7 @@ const links = [
   },
   {
     type: "article",
-    title: "Por que mudei para Go",
+    title: "Por que usar Go?",
     description: "Uma análise profunda sobre melhorias de performance e experiência de desenvolvimento comparando Node.js vs Golang para serviços backend.",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
     url: "salve",
@@ -38,8 +38,8 @@ const links = [
 
 export function App() {
   return (
-    <div id="container" className="w-full max-w-5xl mx-auto flex flex-col rounded-md border border-zinc-300 bg-white mt-4">
-      < Hero />
+    <div id="container" className="w-full max-w-5xl mx-auto flex flex-col rounded-md border border-zinc-300 bg-white">
+      <Hero />
       <SocialMedia />
       <LinkCard links={links} />
       <Footer />
