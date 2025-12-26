@@ -1,3 +1,5 @@
+import { LazyImage } from "./lazy-image"
+
 type LinkCardProps = {
   links: {
     type: "other" | "article",
@@ -19,10 +21,11 @@ export const LinkCard = ({ links }: LinkCardProps) => {
           rel="noopener noreferrer"
           className="flex flex-col md:flex-row gap-8 h-auto md:h-[250px] rounded-xl border border-dashed border-zinc-800 cursor-pointer hover:bg-zinc-50 transition-colors group no-underline overflow-hidden"
         >
-          <img
+          <LazyImage
             src={link.image}
             className="w-full md:w-[320px] shrink-0 h-48 md:h-full rounded-t-xl md:rounded-l-xl md:rounded-tr-none md:rounded-tl-xl bg-zinc-800 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
             alt={link.title}
+            containerClassName="w-full md:w-[320px] shrink-0 h-48 md:h-full"
           />
 
           <div className="flex flex-col space-y-2 flex-2 p-6 md:p-8 justify-center">
