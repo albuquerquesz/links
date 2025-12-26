@@ -32,7 +32,7 @@ const links = [
     title: "A Epidemia do Bun",
     description: "Bun é só hype ou o futuro do runtime JavaScript? Uma comparação direta com o Node.js.",
     image: "https://miro.medium.com/v2/resize:fit:786/format:webp/1*Qisn0s5XVyC0P4GWfkHy-w.png",
-    url: "",
+    url: "https://albuquerquesz.medium.com/a-epidemia-do-bun-77c76ec17d35",
   },
 ];
 
